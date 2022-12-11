@@ -1,0 +1,156 @@
+.LabTestForm{
+    height: 85vh;
+    width: 80%;
+    margin-left: 10%;
+    /* border: 1px gray solid; */
+    box-shadow: 0px 0px 60px -28px grey;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    overflow-y: scroll;
+
+}
+
+
+.LabTestFormLeft{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.LabTestFormLeft, .LabTestFormRight{
+    width: 49%;
+    float: left;
+    margin-left: 1%;
+}
+
+.LabTestFormRight{
+    height: 100%;
+    background: url("../images/Lab-Test/lab-test.jpg") no-repeat;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+}
+
+.LabTestFormLeft table{
+    width: 100%;
+}
+
+.LabTestFormLeft table td{
+    padding: 5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"],input[type="time"]{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 16px;
+}
+
+input[type="checkbox"]{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+label[for="district"]{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+select{
+    width: 30%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 16px;
+}
+
+input, select{
+    outline: none;
+}
+
+input:focus{
+    border-radius: 10px;
+    border-bottom: 2px solid rgb(59, 59, 59);
+    transition: 0.4s;
+}
+
+.checkBoxText{
+    font-size: 20px;
+}
+
+.labTestButtons{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.labTestButtons button{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: violet;
+    color: white;
+    border: 0px;
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+
+.formPartTitle{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.withMsgFormTitle span:nth-child(1):after{
+    content: "*";
+    color: red;
+}
+
+.withMsgFormTitle span:last-child{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .LabTestFormLeft{
+        width: 100%;
+    }
+
+    .LabTestFormRight{
+        width: 100%;
+    }
+
+    .LabTestForm{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+    .LabTestForm{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+
+@media only screen and (min-width:1025px) and (max-width:1200px){
+
+}
+
+
+
+@media only screen and  (min-width:1201px){
+
+
+}
+
+
+

@@ -1,0 +1,161 @@
+.bannerAnimation {
+  margin: 10px;
+}
+
+.bannerAnimation {
+  height: 500px;
+  animation: BannerAnimationHome 20s infinite;
+  animation-play-state: running;
+  animation-delay: 2s;
+  border: 2px steelblue solid;
+  background: url("../images/Animation/ani1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@keyframes BannerAnimationHome {
+  0% {
+    background: url("../images/Animation/ani1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  25% {
+    background: url("../images/Animation/ani2.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  50% {
+    background: url("../images/Animation/ani3.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  75% {
+    background: url("../images/Animation/ani4.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  100% {
+    background: url("../images/Animation/ani5.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* .clearFloat {
+  clear: both;
+} */
+
+.prodSectionTitle {
+  margin-left: 10px;
+}
+
+.prodSectionTitle p {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.pTabAlignCenter{
+  text-align: center;
+}
+
+.prodTab {
+  width: 19%;
+  margin: 1%;
+  background: rgba(229, 214, 255, 0.362);
+  padding: 30px;
+  /* float: left; */
+  box-shadow: 0px 0px 46px -32px grey;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.prodTab:hover {
+  transition: 1s;
+  scale: 1.03;
+}
+
+.prodTab p {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.prodTitle p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.proImage img {
+  height: 170px;
+  width: 100%;
+}
+
+.ProdPriceInfo p {
+  color: blueviolet;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.addToCartBtn button {
+  width: 100%;
+  text-align: center;
+  border: 2px solid rgb(187, 153, 255);
+  padding: 7px;
+  border-radius: 5px;
+  background: rgb(228, 214, 255);
+  color: orange;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.addToCartBtn button:active {
+  border: 2px solid rgb(0, 255, 76);
+  background: rgb(250, 234, 230);
+}
+
+@media only screen and (max-width: 767px) {
+
+    .bannerAnimation{
+        height: 250px;
+    }
+
+    .prodTab{
+        width: 85%;
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+  .prodTab{
+    width: 40%;
+  }
+}
+
+
+@media only screen and (min-width:1025px) and (max-width:1200px){
+  .prodTab{
+    width: 40%;
+  }
+}
+
+
+
+@media only screen and  (min-width:1201px){
+  .prodTab{
+    width: 18%;
+  } 
+}

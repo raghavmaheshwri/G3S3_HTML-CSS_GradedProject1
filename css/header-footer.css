@@ -1,0 +1,80 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background: rgb(67, 67, 67);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+footer {
+  background: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+.main-menu {
+  background-color: rgb(128, 128, 128);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.main-menu ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  list-style: none;
+}
+
+.main-menu ul li {
+  display: inline-block;
+  position: relative;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.main-menu ul li:hover {
+  background: black;
+  color: white;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown {
+  position: absolute;
+  left: 0px;
+  padding-left: 0px;
+  background: lightgray;
+  margin-top: 8px !important;
+  display: none;
+  width: 150px;
+}
+
+.dropdown li {
+  display: block !important;
+}
+
+.dropdown li a {
+  color: rgb(70, 70, 255) !important;
+}
+
+.main-menu ul li:hover .dropdown {
+  display: block;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="stylesheet" href="css/lab-test.css" />
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <h1>Pharmacy</h1>
+        </div>
+    </header>
+
+    <div class="main-menu">
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">Our Medicines</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Fever</a></li>
+                        <li><a href="#">Muscle Pains</a></li>
+                        <li><a href="#">Cold & Cough</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Health Care</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Baby Care</a></li>
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Home Care</a></li>
+                        <li><a href="#">Personal Care</a></li>
+                        <li><a href="#">Pet Care</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="lab-test.html">Lab Test</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <form method="post">
+        <section class="LabTestFormSec">
+            <div class="LabTestForm">
+                <div class="LabTestFormLeft">
+                    <div id="#cntDetails">
+                        <p class="formPartTitle">1. Your Contact Details</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" name="name" id="" placeholder="Full Name" required />
+                                </td>
+                                <td>
+                                    <input type="text" name="Patientid" id="" placeholder="Patient id if exists"
+                                        required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="tel" name="contactno" id="" placeholder="Contact Number" required />
+                                </td>
+                                <td>
+                                    <input type="email" name="emailid" id="" placeholder="Email Id" required />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div>
+                        <p class="formPartTitle">2. Address</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" name="HouseNo" id="" placeholder="H-No." required />
+                                </td>
+                                <td>
+                                    <input type="text" name="street" id="" placeholder="Street" required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="area" id="" placeholder="Area" required />
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+
+                        <br />
+                        <label for="district">Select your District</label><br />
+                        <select required id="district" name="district">
+                            <option disabled selected value="">-- District --</option>
+                            <option value="jodhpur">Jodhpur</option>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="delhi">Delhi</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p class="formPartTitle withMsgFormTitle"><span>3. Choose the Test Type</span></br>
+                        <span>(Check atleast one box without fail)</span></p>
+                        <input type="checkbox" name="cbc[]" id="" value="CBC" /> <span class="checkBoxText"> CBC</span> <br />
+                        <input type="checkbox" name="cbc[]" id="" value="CompleteUrine" /><span class="checkBoxText"> Urine</span> <br />
+                        <input type="checkbox" name="cbc[]" id="" value="LipidProfile" /><span class="checkBoxText"> Lipid Profile</span> <br />
+                        <input type="checkbox" name="cbc[]" id="" value="TSH" /><span class="checkBoxText"> Thyroid
+                        Stimulating Hormone(TSH) </span><br />
+                        <input type="checkbox" name="cbc[]" id="" value="GlucoseTest" /><span class="checkBoxText"> Glucose Test</span> <br />
+                    </div>
+
+                    <div>
+                        <p class="formPartTitle">4. Do you want a hard copy of the report also?</p>
+                        <input type="radio" name="hardcopy" id="" required /> Yes
+                        <input type="radio" name="hardcopy" id="" required /> No
+                    </div>
+
+                    <div>
+                        <p class="formPartTitle">5. Select Your Comfortable Date and Time.</p>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Date</label><br />
+                                <input type="date" name="date" id="" required />
+                            </td>
+                            <td>
+                                <label>Time</label><br />
+                                <input type="time" name="time" id="" required />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+
+                <div class="LabTestFormRight"></div>
+
+                <div style="clear: both"></div>
+            </div>
+
+            <div class="labTestButtons">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </section>
+    </form>
+
+    <footer>
+        <div>
+            <p>@copyright. Only for demonstration purposes</p>
+        </div>
+    </footer>
+</body>
+
+</html>
